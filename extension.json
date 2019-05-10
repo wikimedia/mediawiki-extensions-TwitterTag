@@ -1,0 +1,39 @@
+{
+	"name": "Twitter Tag",
+	"version": "1.0.0",
+	"author": [
+		"[http://community.wikia.com/wiki/User:TyA TyA]",
+		"[http://community.wikia.com/wiki/User:Sactage sactage]",
+		"X-Wing Team @ Wikia",
+		"[https://www.mediawiki.org/wiki/User:01miki10 01miki10]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:TwitterTag",
+	"descriptionmsg": "twitter-tag-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"TwitterTagController": "TwitterTagController.class.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"TwitterTagController::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"TwitterTag": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.TwitterTag": {
+			"scripts": [
+				"scripts/twitter.min.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "TwitterTag"
+	},
+	"manifest_version": 1
+}
