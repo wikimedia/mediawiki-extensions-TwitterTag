@@ -41,9 +41,8 @@ class TwitterTagController {
 		// Favourites Timeline, but there's no (documented) parameter to force any of them.
 	];
 
-	static public function onParserFirstCallInit( Parser $parser ) {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( self::PARSER_TAG_NAME, [ new static(), 'parseTag' ] );
-		return true;
 	}
 
 	/**
@@ -53,25 +52,25 @@ class TwitterTagController {
 	 * @return string
 	 */
 	public function parseTag( $input, array $args, Parser $parser, PPFrame $frame ) {
-		if ( !empty( $args[ 'href' ] ) && preg_match( self::TWITTER_USER_TIMELINE, $args[ 'href' ] ) ) {
+		if ( !empty( $args['href'] ) && preg_match( self::TWITTER_USER_TIMELINE, $args['href'] ) ) {
 			$href = $args['href'];
-		} elseif ( !empty( $args[ 'screen-name' ] ) && preg_match( self::REGEX_TWITTER_SCREEN_NAME, $args[ 'screen-name' ] ) ) {
-			$href = self::TWITTER_BASE_URL . $args[ 'screen-name' ];
+		} elseif ( !empty( $args['screen-name'] ) && preg_match( self::REGEX_TWITTER_SCREEN_NAME, $args['screen-name'] ) ) {
+			$href = self::TWITTER_BASE_URL . $args['screen-name'];
 		} else {
 			// if no href to user timeline check for id
-			if ( empty( $args[ 'widget-id' ] ) ) {
+			if ( empty( $args['widget-id'] ) ) {
 				return '<strong class="error">' . wfMessage( 'twitter-tag-widget-id' )->parse() . '</strong>';
 			}
 			$href = self::TWITTER_BASE_URL;
 		}
 
 		$attributes = $this->prepareAttributes( $args, self::TAG_PERMITTED_ATTRIBUTES );
-		$attributes[ 'href' ] = $href;
+		$attributes['href'] = $href;
 		// data-wikia-widget attribute is searched for by Mercury
-		$attributes[ 'data-wikia-widget' ] = self::PARSER_TAG_NAME;
+		$attributes['data-wikia-widget'] = self::PARSER_TAG_NAME;
 
 		// Twitter script is searching for twitter-timeline class
-		$attributes[ 'class' ] = 'twitter-timeline';
+		$attributes['class'] = 'twitter-timeline';
 		$html = Html::element( 'a', $attributes, self::TWITTER_NAME );
 		// Wrapper used for easily selecting the widget in Selenium tests
 		$html = Html::rawElement( 'span', [ 'class' => 'widget-twitter' ], $html );
@@ -91,23 +90,21 @@ class TwitterTagController {
 	 * @return array
 	 */
 	private function prepareAttributes( array $attributes, array $permittedAttributes ) {
-		$validatedAttributes = [ ];
+		$validatedAttributes = [];
 
 		// setting default values
-		$validatedAttributes[ 'data-height' ] = self::DEFAULT_HEIGHT;
+		$validatedAttributes['data-height'] = self::DEFAULT_HEIGHT;
 
 		foreach ( $attributes as $attributeName => $attributeValue ) {
-			if ( array_key_exists( $attributeName, $permittedAttributes ) &&
-				 preg_match( $permittedAttributes[ $attributeName ], $attributeValue )
+			if (
+				array_key_exists( $attributeName, $permittedAttributes ) &&
+				preg_match( $permittedAttributes[$attributeName], $attributeValue )
 			) {
-				$validatedAttributes[ 'data-' . $attributeName ] = $attributeValue;
+				$validatedAttributes['data-' . $attributeName] = $attributeValue;
 			}
 		}
 
 		return $validatedAttributes;
 	}
 
-	protected function buildParamValidator( $paramName ) {
-		return true;
-	}
 }
