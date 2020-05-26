@@ -15,9 +15,7 @@
 		"TwitterTagController": "TwitterTagController.class.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"TwitterTagController::onParserFirstCallInit"
-		]
+		"ParserFirstCallInit": "TwitterTagController::onParserFirstCallInit"
 	},
 	"MessagesDirs": {
 		"TwitterTag": [
