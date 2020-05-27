@@ -6,12 +6,15 @@ class TwitterTagController {
 	const TWITTER_NAME = 'Twitter';
 	const TWITTER_BASE_URL = 'https://twitter.com/';
 	const TWITTER_USER_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}$/i';
+	const TWITTER_LIST_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/lists\/[^0-9]+.{0,24}$/i';
+	const TWITTER_LIKES_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/likes/i';
 
 	const DEFAULT_HEIGHT = '500';
 
 	const REGEX_DIGITS = '/^[0-9]*$/';
 	const REGEX_HEX_COLOR = '/#[0-9a-f]{3}(?:[0-9a-f]{3})?$/i';
 	const REGEX_TWITTER_SCREEN_NAME = '/^@?[a-z0-9_]{1,15}$/i';
+	const REGEX_TWITTER_LIST_SLUG = '/^[^0-9]+.{0,24}$/';
 
 	const TAG_PERMITTED_ATTRIBUTES = [
 		'widget-id' => self::REGEX_DIGITS,
@@ -26,15 +29,16 @@ class TwitterTagController {
 		'width' => self::REGEX_DIGITS,
 		'height' => self::REGEX_DIGITS,
 		'show-replies' => '/^(true|false)$/i',
+		'dnt' => '/^(true|false)$/i',
 		// Parameters below if used properly, may overwrite the timeline type to:
-		// User Timeline
+		// User and list timelines
 		'screen-name' => self::REGEX_TWITTER_SCREEN_NAME,
 		'user-id' => self::REGEX_DIGITS,
-		// List Timeline
-		'list-owner-screen-name' => self::REGEX_TWITTER_SCREEN_NAME,
-		'list-owner-screen-id' => self::REGEX_DIGITS,
-		'list-slug' => '/^[^0-9]+.{0,24}$/',
+		// List timeline
+		'list-slug' => self::REGEX_TWITTER_LIST_SLUG,
 		'list-id' => self::REGEX_DIGITS,
+		// Likes timeline
+		'likes-screen-name' => self::REGEX_TWITTER_SCREEN_NAME,
 		// Collection Timeline
 		'custom-timeline-id' => self::REGEX_DIGITS,
 		// At the moment of writing this code there's also aviable Search Timeline and (undocumented)
@@ -52,10 +56,25 @@ class TwitterTagController {
 	 * @return string
 	 */
 	public function parseTag( $input, array $args, Parser $parser, PPFrame $frame ) {
-		if ( !empty( $args['href'] ) && preg_match( self::TWITTER_USER_TIMELINE, $args['href'] ) ) {
-			$href = $args['href'];
+		if ( !empty( $args['href'] ) ) {
+			if ( preg_match( self::TWITTER_USER_TIMELINE, $args['href'] ) || preg_match( self::TWITTER_LIST_TIMELINE, $args['href'] )
+				 || preg_match( self::TWITTER_LIKES_TIMELINE, $args['href'] ) ) {
+				$href = $args['href'];
+			} else {
+				// if href doesn't match supported types
+				return '<strong class="error">' . wfMessage( 'twitter-tag-href' )->parse() . '</strong>';
+			}
 		} elseif ( !empty( $args['screen-name'] ) && preg_match( self::REGEX_TWITTER_SCREEN_NAME, $args['screen-name'] ) ) {
-			$href = self::TWITTER_BASE_URL . $args['screen-name'];
+			if ( !empty( $args['list-slug'] ) && preg_match( self::REGEX_TWITTER_LIST_SLUG, $args['list-slug'] ) ) {
+				// list timeline
+				$href = self::TWITTER_BASE_URL . $args['screen-name'] . '/lists/' . $args['list-slug'];
+			} else {
+				// user timeline
+				$href = self::TWITTER_BASE_URL . $args['screen-name'];
+			}
+		} elseif ( !empty( $args['likes-screen-name'] ) && preg_match( self::REGEX_TWITTER_SCREEN_NAME, $args['likes-screen-name'] ) ) {
+			// likes timeline
+			$href = self::TWITTER_BASE_URL . $args['likes-screen-name'] . '/likes';
 		} else {
 			// if no href to user timeline check for id
 			if ( empty( $args['widget-id'] ) ) {
