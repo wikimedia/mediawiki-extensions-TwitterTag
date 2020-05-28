@@ -57,7 +57,7 @@ class TwitterTagController {
 	 * Parses the twitter tag. Checks to ensure the required attributes are there.
 	 * Then constructs the HTML after seeing which attributes are in use.
 	 *
-	 * @param $input
+	 * @param string $input
 	 * @param array $args Attributes of <twitter> tag
 	 * @param Parser $parser
 	 * @param PPFrame $frame
