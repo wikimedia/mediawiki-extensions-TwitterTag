@@ -12,7 +12,7 @@
 	"license-name": "GPL-3.0-or-later",
 	"type": "parserhook",
 	"AutoloadClasses": {
-		"TwitterTagController": "TwitterTagController.class.php"
+		"TwitterTagController": "TwitterTagController.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "TwitterTagController::onParserFirstCallInit"

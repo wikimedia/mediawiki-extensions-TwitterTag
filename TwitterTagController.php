@@ -45,6 +45,10 @@ class TwitterTagController {
 		// Favourites Timeline, but there's no (documented) parameter to force any of them.
 	];
 
+	/**
+	 * Hooks to ParserFirstCallInit
+	 * @param Parser $parser
+	 */
 	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( self::PARSER_TAG_NAME, [ new static(), 'parseTag' ] );
 	}
@@ -53,6 +57,10 @@ class TwitterTagController {
 	 * Parses the twitter tag. Checks to ensure the required attributes are there.
 	 * Then constructs the HTML after seeing which attributes are in use.
 	 *
+	 * @param $input
+	 * @param array $args Attributes of <twitter> tag
+	 * @param Parser $parser
+	 * @param PPFrame $frame
 	 * @return string
 	 */
 	public function parseTag( $input, array $args, Parser $parser, PPFrame $frame ) {
