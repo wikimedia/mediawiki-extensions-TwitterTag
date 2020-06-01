@@ -2,21 +2,21 @@
 
 class TwitterTagController {
 
-	const PARSER_TAG_NAME = 'twitter';
-	const TWITTER_NAME = 'Twitter';
-	const TWITTER_BASE_URL = 'https://twitter.com/';
-	const TWITTER_USER_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}$/i';
-	const TWITTER_LIST_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/lists\/[^0-9]+.{0,24}$/i';
-	const TWITTER_LIKES_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/likes/i';
+	private const PARSER_TAG_NAME = 'twitter';
+	private const TWITTER_NAME = 'Twitter';
+	private const TWITTER_BASE_URL = 'https://twitter.com/';
+	private const TWITTER_USER_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}$/i';
+	private const TWITTER_LIST_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/lists\/[^0-9]+.{0,24}$/i';
+	private const TWITTER_LIKES_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/likes/i';
 
-	const DEFAULT_HEIGHT = '500';
+	private const DEFAULT_HEIGHT = '500';
 
-	const REGEX_DIGITS = '/^[0-9]*$/';
-	const REGEX_HEX_COLOR = '/#[0-9a-f]{3}(?:[0-9a-f]{3})?$/i';
-	const REGEX_TWITTER_SCREEN_NAME = '/^@?[a-z0-9_]{1,15}$/i';
-	const REGEX_TWITTER_LIST_SLUG = '/^[^0-9]+.{0,24}$/';
+	private const REGEX_DIGITS = '/^[0-9]*$/';
+	private const REGEX_HEX_COLOR = '/#[0-9a-f]{3}(?:[0-9a-f]{3})?$/i';
+	private const REGEX_TWITTER_SCREEN_NAME = '/^@?[a-z0-9_]{1,15}$/i';
+	private const REGEX_TWITTER_LIST_SLUG = '/^[^0-9]+.{0,24}$/';
 
-	const TAG_PERMITTED_ATTRIBUTES = [
+	private const TAG_PERMITTED_ATTRIBUTES = [
 		'widget-id' => self::REGEX_DIGITS,
 		'chrome' => '/^((noheader|nofooter|noborders|noscrollbar|transparent) ?){0,5}$/i',
 		'tweet-limit' => self::REGEX_DIGITS,
