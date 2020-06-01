@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"twitter-tag-desc": "Cria a etiqueta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Erro: nenhum ID de widget do Twitter fornecido. Por favor, veja [[mw:Extension:TwitterTag|instruções de uso]].",
+	"twitter-tag-href": "Erro: URL inválido ou não suportado. Por favor, veja [[mw:Extension:TwitterTag|instruções de uso]]."
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"twitter-tag-desc": "建立 <nowiki><twitter></nowiki> 標籤。",
+	"twitter-tag-widget-id": "錯誤：沒有提供 Twitter Widget ID。請參閱[[mw:Extension:TwitterTag|使用說明]]。",
+	"twitter-tag-href": "錯誤：提供的 URL 不支援或是無效。請參閱[[mw:Extension:TwitterTag|使用說明]]。"
+}

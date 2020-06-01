@@ -1,4 +1,7 @@
 {
+	"@metadata": {
+		"authors": []
+	},
 	"twitter-tag-desc": "The description of the app found on [[Special:Version]].",
 	"twitter-tag-widget-id": "The error text displayed when there is no id attribute. In English one, it points to the extension page at mediawiki.org.",
 	"twitter-tag-href": "The error text displayed when href attribute does not match supported types. In English one, it points to the extension page at mediawiki.org."

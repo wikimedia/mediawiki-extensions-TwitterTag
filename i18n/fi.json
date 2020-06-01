@@ -1,4 +1,7 @@
 {
+	"@metadata": {
+		"authors": []
+	},
 	"twitter-tag-desc": "Luo <nowiki><twitter></nowiki>-tagin.",
 	"twitter-tag-widget-id": "Virhe: Twitterin Widget ID:tä ei ole annettu. Katso [[mw:Extension:TwitterTag|käyttöohjeet]].",
 	"twitter-tag-href": "Virhe: Annettu URL ei ole tuettu tai on virheellinen. Katso [[mw:Extension:TwitterTag|käyttöohjeet]]."

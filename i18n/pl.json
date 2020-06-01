@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"twitter-tag-desc": "Tworzy znacznik <nowiki><twitter></nowiki>",
+	"twitter-tag-widget-id": "Błąd: Nie podano ID widżetu Twittera. Zobacz [[mw:Extension:TwitterTag|instrukcje używania]].",
+	"twitter-tag-href": "Błąd: Podano niewspierany lub uszkodzony adres URL. Zobacz [[mw:Extension:TwitterTag|instrukcje używania]]."
+}
