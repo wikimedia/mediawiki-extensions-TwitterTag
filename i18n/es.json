@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"twitter-tag-desc": "Crea la etiqueta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Error: no se proporcionó ningún identificador de «widget» de Twitter. Consúltense las [[mw:Extension:TwitterTag|instrucciones de uso]].",
+	"twitter-tag-href": "Error: se proporcionó un URL no admitido o no válido. Consúltense las [[mw:Extension:TwitterTag|instrucciones de uso]]."
+}
