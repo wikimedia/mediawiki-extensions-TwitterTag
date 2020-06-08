@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pamputt",
+			"Wladek92"
+		]
+	},
+	"twitter-tag-desc": "Crée l'étiquette <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Erreur : aucun identifiant de widget Twitter n'est fourni. Veuillez consulter le [[mw:Extension:TwitterTag|mode d'emploi]].",
+	"twitter-tag-href": "Erreur: l'URL fournie est non prise en charge ou n'est pas valide. Veuillez consulter le [[mw:Extension:TwitterTag|mode d'emploi]]."
+}
