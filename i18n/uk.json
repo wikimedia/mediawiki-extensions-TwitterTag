@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"twitter-tag-desc": "Створює тег <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Помилка: Не вказано ідентифікатор віджета Twitter. Будь ласка, перегляньте [[mw:Extension:TwitterTag|інструкції використання]].",
+	"twitter-tag-href": "Помилка: Вказано непідтримуваний чи недійсний URL. Будь ласка, перегляньте [[mw:Extension:TwitterTag|інструкції використання]]."
+}
