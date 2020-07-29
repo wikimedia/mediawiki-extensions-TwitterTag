@@ -11,6 +11,9 @@
 	"descriptionmsg": "twitter-tag-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.27.0"
+	},
 	"AutoloadClasses": {
 		"TwitterTagController": "TwitterTagController.php"
 	},
