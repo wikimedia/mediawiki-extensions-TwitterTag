@@ -8,6 +8,7 @@ class TwitterTagController {
 	private const TWITTER_USER_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}$/i';
 	private const TWITTER_LIST_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/lists\/[^0-9]+.{0,24}$/i';
 	private const TWITTER_LIKES_TIMELINE = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/likes/i';
+	private const TWITTER_TWEET = '/^https:\/\/twitter\.com\/@?[a-z0-9_]{1,15}\/status\/[0-9]*/i';
 
 	private const DEFAULT_HEIGHT = '500';
 
@@ -30,19 +31,20 @@ class TwitterTagController {
 		'height' => self::REGEX_DIGITS,
 		'show-replies' => '/^(true|false)$/i',
 		'dnt' => '/^(true|false)$/i',
+		'cards' => '/^(hidden)$/i',
+		'conversation' => '/^(none)$/i',
+		'align' => '/^(left|center|right)$/i',
 		// Parameters below if used properly, may overwrite the timeline type to:
-		// User and list timelines
+		// User and list timelines, embedded tweet
 		'screen-name' => self::REGEX_TWITTER_SCREEN_NAME,
 		'user-id' => self::REGEX_DIGITS,
 		// List timeline
 		'list-slug' => self::REGEX_TWITTER_LIST_SLUG,
 		'list-id' => self::REGEX_DIGITS,
-		// Likes timeline
+		// Embedded tweet
+		'tweet-id' => self::REGEX_DIGITS,
+		// Likes timeline (deprecated)
 		'likes-screen-name' => self::REGEX_TWITTER_SCREEN_NAME,
-		// Collection Timeline
-		'custom-timeline-id' => self::REGEX_DIGITS,
-		// At the moment of writing this code there's also aviable Search Timeline and (undocumented)
-		// Favourites Timeline, but there's no (documented) parameter to force any of them.
 	];
 
 	/**
@@ -67,21 +69,32 @@ class TwitterTagController {
 		if ( !empty( $args['href'] ) ) {
 			if ( preg_match( self::TWITTER_USER_TIMELINE, $args['href'] ) || preg_match( self::TWITTER_LIST_TIMELINE, $args['href'] )
 				 || preg_match( self::TWITTER_LIKES_TIMELINE, $args['href'] ) ) {
+				$type = 'timeline';
+				$href = $args['href'];
+			} elseif ( preg_match( self::TWITTER_TWEET, $args['href'] ) ) {
+				$type = 'tweet';
 				$href = $args['href'];
 			} else {
 				// if href doesn't match supported types
 				return '<strong class="error">' . wfMessage( 'twitter-tag-href' )->parse() . '</strong>';
 			}
 		} elseif ( !empty( $args['screen-name'] ) && preg_match( self::REGEX_TWITTER_SCREEN_NAME, $args['screen-name'] ) ) {
-			if ( !empty( $args['list-slug'] ) && preg_match( self::REGEX_TWITTER_LIST_SLUG, $args['list-slug'] ) ) {
+			if ( !empty( $args['tweet-id'] ) && preg_match( self::REGEX_DIGITS, $args['tweet-id'] ) ) {
+				// embedded tweet
+				$type = 'tweet';
+				$href = self::TWITTER_BASE_URL . $args['screen-name'] . '/status/' . $args['tweet-id'];
+			} elseif ( !empty( $args['list-slug'] ) && preg_match( self::REGEX_TWITTER_LIST_SLUG, $args['list-slug'] ) ) {
 				// list timeline
+				$type = 'timeline';
 				$href = self::TWITTER_BASE_URL . $args['screen-name'] . '/lists/' . $args['list-slug'];
 			} else {
 				// user timeline
+				$type = 'timeline';
 				$href = self::TWITTER_BASE_URL . $args['screen-name'];
 			}
 		} elseif ( !empty( $args['likes-screen-name'] ) && preg_match( self::REGEX_TWITTER_SCREEN_NAME, $args['likes-screen-name'] ) ) {
 			// likes timeline
+			$type = 'timeline';
 			$href = self::TWITTER_BASE_URL . $args['likes-screen-name'] . '/likes';
 		} else {
 			// if no href to user timeline check for id
@@ -92,13 +105,17 @@ class TwitterTagController {
 		}
 
 		$attributes = $this->prepareAttributes( $args, self::TAG_PERMITTED_ATTRIBUTES );
-		$attributes['href'] = $href;
-		// data-wikia-widget attribute is searched for by Mercury
-		$attributes['data-wikia-widget'] = self::PARSER_TAG_NAME;
 
 		// Twitter script is searching for twitter-timeline class
-		$attributes['class'] = 'twitter-timeline';
-		$html = Html::element( 'a', $attributes, self::TWITTER_NAME );
+		if ( $type == 'tweet' ) {
+			$attributes['class'] = 'twitter-tweet';
+			$html = Html::element( 'a', [ 'href' => $href ], self::TWITTER_NAME );
+			$html = Html::rawElement( 'blockquote', $attributes, $html );
+		} else {
+			$attributes['class'] = 'twitter-timeline';
+			$attributes['href'] = $href;
+			$html = Html::element( 'a', $attributes, self::TWITTER_NAME );
+		}
 		// Wrapper used for easily selecting the widget in Selenium tests
 		$html = Html::rawElement( 'span', [ 'class' => 'widget-twitter' ], $html );
 
