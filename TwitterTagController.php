@@ -127,8 +127,8 @@ class TwitterTagController {
 	/**
 	 * Validates, prefixes and sanitizes the provided attributes.
 	 *
-	 * @param array $attributes - attributes to validate
-	 * @param array $permittedAttributes - key-value pairs of permitted parameters and regexes which these parameters'
+	 * @param array $attributes attributes to validate
+	 * @param array $permittedAttributes key-value pairs of permitted parameters and regexes which these parameters'
 	 *     values have to match.
 	 *
 	 * @return array
