@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"twitter-tag-desc": "Oppretter <nowiki><twitter></nowiki>-taggen.",
+	"twitter-tag-widget-id": "Feil: Ingen Twitter Widget-ID angitt. Se [[mw:Extension:TwitterTag|bruksanvisningen]].",
+	"twitter-tag-href": "Feil: Ustøttet eller ugyldig URL angitt. Se [[mw:Extension:TwitterTag|bruksanvisningen]]."
+}

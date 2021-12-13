@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"twitter-tag-desc": "Skapar taggen <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Fel: Inget Twitter Widget-ID angivet. Var god läs [[mw:Extension:TwitterTag|användningsinstruktionerna]].",
+	"twitter-tag-href": "Fel: Den angivna URL:en är ogiltig eller stöds inte. Var god läs [[mw:Extension:TwitterTag|användningsinstruktionerna]]."
+}

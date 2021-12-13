@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Kwj2772"
 		]
 	},
-	"twitter-tag-desc": "<nowiki><twitter></nowiki> 태그를 만듭니다."
+	"twitter-tag-desc": "<nowiki><twitter></nowiki> 태그를 만듭니다.",
+	"twitter-tag-widget-id": "오류: 트위터 위젯 ID가 제공되지 않았습니다. [[mw:Extension:TwitterTag|사용 방법]]을 참조하십시오.",
+	"twitter-tag-href": "오류: 지원되지 않거나 잘못된 URL이 제시되었습니다. [[mw:Extension:TwitterTag|사용 방법]]을 참조하십시오."
 }

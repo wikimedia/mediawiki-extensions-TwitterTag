@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana"
+		]
+	},
+	"twitter-tag-desc": "Membuat tag <nowiki><twitter></nowiki>",
+	"twitter-tag-widget-id": "Galat: Tidak ada ID Twitter Widget yang diberikan. Tolong lihat [[mw:Extension:TwitterTag|petunjuk penggunaan]].",
+	"twitter-tag-href": "Galat: Diberikan URL yang tidak didukung atau tidak sah. Tolong lihat [[mw:Extension:TwitterTag|petunjuk penggunaan]]."
+}
