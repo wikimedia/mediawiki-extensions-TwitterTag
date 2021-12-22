@@ -67,10 +67,14 @@ class TwitterTagController {
 	 */
 	public function parseTag( $input, array $args, Parser $parser, PPFrame $frame ) {
 		if ( !empty( $args['href'] ) ) {
-			if ( preg_match( self::TWITTER_USER_TIMELINE, $args['href'] ) || preg_match( self::TWITTER_LIST_TIMELINE, $args['href'] )
-				 || preg_match( self::TWITTER_LIKES_TIMELINE, $args['href'] ) ) {
+			if ( preg_match( self::TWITTER_USER_TIMELINE, $args['href'] ) || preg_match( self::TWITTER_LIST_TIMELINE, $args['href'] ) ) {
 				$type = 'timeline';
 				$href = $args['href'];
+			} elseif ( preg_match( self::TWITTER_LIKES_TIMELINE, $args['href'] ) ) {
+				$type = 'timeline';
+				$href = $args['href'];
+				// add tracking category for likes timelines
+				$parser->addTrackingCategory( 'twitter-tag-likes-category' );
 			} elseif ( preg_match( self::TWITTER_TWEET, $args['href'] ) ) {
 				$type = 'tweet';
 				$href = $args['href'];
@@ -96,6 +100,8 @@ class TwitterTagController {
 			// likes timeline
 			$type = 'timeline';
 			$href = self::TWITTER_BASE_URL . $args['likes-screen-name'] . '/likes';
+			// add tracking category
+			$parser->addTrackingCategory( 'twitter-tag-likes-category' );
 		} else {
 			// if no href to user timeline check for id
 			if ( empty( $args['widget-id'] ) ) {

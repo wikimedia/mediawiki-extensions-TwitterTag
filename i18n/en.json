@@ -1,8 +1,12 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"01miki10"
+		]
 	},
 	"twitter-tag-desc": "Creates the <nowiki><twitter></nowiki> tag.",
 	"twitter-tag-widget-id": "Error: No Twitter Widget ID provided. Please see [[mw:Extension:TwitterTag|usage instructions]].",
-	"twitter-tag-href": "Error: Unsupported or invalid URL provided. Please see [[mw:Extension:TwitterTag|usage instructions]]."
+	"twitter-tag-href": "Error: Unsupported or invalid URL provided. Please see [[mw:Extension:TwitterTag|usage instructions]].",
+	"twitter-tag-likes-category": "Pages with Twitter likes timelines",
+	"twitter-tag-likes-category-desc": "Pages containing embedded Twitter likes timelines. Such timelines [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 will be deprecated] by Twitter at some point."
 }
