@@ -119,7 +119,7 @@ class TwitterTagController {
 		// Wrapper used for easily selecting the widget in Selenium tests
 		$html = Html::rawElement( 'span', [ 'class' => 'widget-twitter' ], $html );
 
-		$parser->getOutput()->addModules( 'ext.TwitterTag' );
+		$parser->getOutput()->addModules( [ 'ext.TwitterTag' ] );
 
 		return $html;
 	}
