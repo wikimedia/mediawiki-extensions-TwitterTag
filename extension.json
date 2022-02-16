@@ -29,6 +29,10 @@
 		"ext.TwitterTag": {
 			"scripts": [
 				"scripts/twitter.min.js"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
 			]
 		}
 	},
