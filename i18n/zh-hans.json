@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tr jason"
+		]
+	},
+	"twitter-tag-desc": "创建 <nowiki><twitter></nowiki> 标签",
+	"twitter-tag-widget-id": "错误：未提供 Twitter Widget ID。请参阅 [[mw:Extension:TwitterTag|使用说明]]。",
+	"twitter-tag-href": "错误：提供的 URL 不受支持或无效。请参阅 [[mw:Extension:TwitterTag|使用说明]]。"
+}
