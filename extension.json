@@ -1,6 +1,6 @@
 {
 	"name": "Twitter Tag",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"author": [
 		"TyA",
 		"sactage",
@@ -40,5 +40,8 @@
 		"localBasePath": "",
 		"remoteExtPath": "TwitterTag"
 	},
+	"TrackingCategories": [
+		"twitter-tag-likes-category"
+	],
 	"manifest_version": 1
 }
