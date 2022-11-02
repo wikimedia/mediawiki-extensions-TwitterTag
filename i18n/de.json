@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"twitter-tag-desc": "Erstellt das <nowiki><twitter></nowiki>-Tag.",
+	"twitter-tag-widget-id": "Fehler: Keine Twitter-Widget-ID angegeben. Siehe die [[mw:Extension:TwitterTag|Dokumentation]].",
+	"twitter-tag-href": "Fehler: Nicht unterstützte oder ungültige URL angegeben. Siehe die [[mw:Extension:TwitterTag|Dokumentation]].",
+	"twitter-tag-likes-category": "Seiten mit Twitter Likes-Zeitleisten",
+	"twitter-tag-likes-category-desc": "Seiten mit eingebetteten Twitter Likes-Zeitleisten. Solche Zeitleisten werden irgendann von Twitter [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 misbilligt]."
+}

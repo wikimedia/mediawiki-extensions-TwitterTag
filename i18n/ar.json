@@ -6,5 +6,7 @@
 	},
 	"twitter-tag-desc": "يخلق ال<nowiki><twitter></nowiki> بطاقة شعار.",
 	"twitter-tag-widget-id": "خطأ: لم يتم تقديم معرف أداة Twitter. يرجى الاطلاع على [[mw:Extension:TwitterTag|تعليمات الاستخدام]].",
-	"twitter-tag-href": "خطأ: تم توفير عنوان URL غير مدعوم أو غير صالح. يرجى الاطلاع على [[mw:Extension:TwitterTag|تعليمات الاستخدام]]."
+	"twitter-tag-href": "خطأ: تم توفير عنوان URL غير مدعوم أو غير صالح. يرجى الاطلاع على [[mw:Extension:TwitterTag|تعليمات الاستخدام]].",
+	"twitter-tag-likes-category": "الصفحات التي تحتوي على Twitter تحب الجداول الزمنية",
+	"twitter-tag-likes-category-desc": "الصفحات التي تحتوي على Twitter المضمن يحب الجداول الزمنية. مثل هذه المخططات الزمنية [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 سيتم إهمالها] بواسطة Twitter في مرحلة ما."
 }
