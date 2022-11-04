@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"twitter-tag-desc": "Cria a etiqueta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Erro: não foi fornecido nenhum identificador de ''widget'' do Twitter. Consulte as [[mw:Extension:TwitterTag|instruções de utilização]], por favor.",
+	"twitter-tag-href": "Erro: foi fornecido um URL inválido ou que não é suportado. Consulte as [[mw:Extension:TwitterTag|instruções de utilização]], por favor.",
+	"twitter-tag-likes-category": "Páginas com linhas cronológicas de gostos no Twitter",
+	"twitter-tag-likes-category-desc": "Páginas que contêm linhas cronológicas de gostos no Twitter. Estas linhas cronológicas [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 vão ser descontinuadas] pelo Twitter no futuro."
+}
