@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"twitter-tag-desc": "Erstellt das <nowiki><twitter></nowiki>-Tag.",
+	"twitter-tag-widget-id": "Fehler: Keine Twitter-Widget-ID angegeben. Siehe die [[mw:Extension:TwitterTag|Dokumentation]].",
+	"twitter-tag-href": "Fehler: Nicht unterstützte oder ungültige URL angegeben. Siehe die [[mw:Extension:TwitterTag|Dokumentation]]."
+}
