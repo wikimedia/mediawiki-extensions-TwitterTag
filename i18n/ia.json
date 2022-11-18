@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"twitter-tag-desc": "Crea le etiquetta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Error: Nulle ID de widget de Twitter fornite. Per favor vide le [[mw:Extension:TwitterTag|instructiones de uso]].",
+	"twitter-tag-href": "Error: Un URL non supportate o non valide ha essite fornite. Per favor vide le [[mw:Extension:TwitterTag|instructiones de uso]].",
+	"twitter-tag-likes-category": "Paginas con chronologias de \"me place\" sur Twitter",
+	"twitter-tag-likes-category-desc": "Paginas que contine chronologias incastrate de \"me place\" sur Twitter. Tal chronologias [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 essera declarate obsolescente] per Twitter a un certe momento."
+}
