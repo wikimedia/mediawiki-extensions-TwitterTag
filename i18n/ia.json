@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"twitter-tag-desc": "Crea le etiquetta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Error: Nulle ID de widget de Twitter fornite. Per favor vide le [[mw:Extension:TwitterTag|instructiones de uso]].",
+	"twitter-tag-href": "Error: Un URL non supportate o non valide ha essite fornite. Per favor vide le [[mw:Extension:TwitterTag|instructiones de uso]]."
+}
