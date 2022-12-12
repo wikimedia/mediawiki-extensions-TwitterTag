@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"twitter-tag-desc": "Ustvari značko <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Napaka: Naveden ni noben identifikator vtičnika za Twitter. Prosimo, glejte [[mw:Extension:TwitterTag|navodila za uporabo]].",
+	"twitter-tag-href": "Napaka: Navedeni URL ni podprt ali je neveljaven. Prosimo, glejte [[mw:Extension:TwitterTag|navodila za uporabo]]."
+}
