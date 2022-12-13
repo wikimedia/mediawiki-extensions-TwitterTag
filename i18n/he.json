@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"twitter-tag-desc": "יצירת התג <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "שגיאה: לא סופק מזהה וידג'ט של טוויטר. נא לעיין ב[[mw:Extension:TwitterTag|הוראות השימוש]].",
+	"twitter-tag-href": "שגיאה: כתובת URL לא נתמכת או בלתי־תקינה. נא לעיין ב[[mw:Extension:TwitterTag|הוראות השימוש]].",
+	"twitter-tag-likes-category": "דפים עם צירי זמן של \"אהבתי\" של טוויטר",
+	"twitter-tag-likes-category-desc": "דפים שמכילים צירי זמן מוטבעים של \"אהבתי\" של טוויטר. צירי זמן כאלה [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 יבוטלו] על־ידי טוויטר מתישהו."
+}
