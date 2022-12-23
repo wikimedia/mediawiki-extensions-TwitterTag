@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"Hedda"
+			"Hedda",
+			"SaldırganSincap"
 		]
 	},
 	"twitter-tag-desc": "<nowiki><twitter></nowiki> etiketini oluşturur.",
 	"twitter-tag-widget-id": "Hata: Twitter Widget Kodu sağlanmadı. Lütfen [[mw:Extension:TwitterTag|kullanım talimatlarına]] bakın.",
-	"twitter-tag-href": "Hata: Desteklenmeyen veya geçersiz URL sağlandı. Lütfen [[mw:Extension:TwitterTag|kullanım talimatlarına]] bakın."
+	"twitter-tag-href": "Hata: Desteklenmeyen veya geçersiz URL sağlandı. Lütfen [[mw:Extension:TwitterTag|kullanım talimatlarına]] bakın.",
+	"twitter-tag-likes-category": "Twitter beğeni zaman çizelgelerine sahip sayfalar",
+	"twitter-tag-likes-category-desc": "Gömülü Twitter beğenileri zaman çizelgelerini içeren sayfalar. Bir noktada Twitter tarafından bu tür zaman çizelgeleri [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 kullanımdan kaldırılacaktır]."
 }
