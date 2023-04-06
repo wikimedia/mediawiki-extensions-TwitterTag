@@ -6,5 +6,7 @@
 	},
 	"twitter-tag-desc": "Oppretter <nowiki><twitter></nowiki>-taggen.",
 	"twitter-tag-widget-id": "Feil: Ingen Twitter Widget-ID angitt. Se [[mw:Extension:TwitterTag|bruksanvisningen]].",
-	"twitter-tag-href": "Feil: Ustøttet eller ugyldig URL angitt. Se [[mw:Extension:TwitterTag|bruksanvisningen]]."
+	"twitter-tag-href": "Feil: Ustøttet eller ugyldig URL angitt. Se [[mw:Extension:TwitterTag|bruksanvisningen]].",
+	"twitter-tag-likes-category": "Sider med tidslinjer for Twitter-likerklikk",
+	"twitter-tag-likes-category-desc": "Sider som inneholder innbygde tidslinjer for Twitter-likerklikk. Slike tidslinjer [https://twittercomunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 blir avviklet] av Twitter i fremtiden."
 }
