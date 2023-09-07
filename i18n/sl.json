@@ -8,5 +8,5 @@
 	"twitter-tag-widget-id": "Napaka: Naveden ni noben identifikator gradnika za Twitter. Prosimo, glejte [[mw:Extension:TwitterTag|navodila za uporabo]].",
 	"twitter-tag-href": "Napaka: Navedeni URL ni podprt ali je neveljaven. Prosimo, glejte [[mw:Extension:TwitterTag|navodila za uporabo]].",
 	"twitter-tag-likes-category": "Strani s časovnicami všečkov na Twitterju",
-	"twitter-tag-likes-category-desc": "Strani, ki vsebujejo vdelane časovnice všečkov Twitterja. Takšne časovnice [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 bo Twitter na neki točki opustil]."
+	"twitter-tag-likes-category-desc": "Strani, ki vsebujejo vdelane časovnice všečkov Twitterja. Takšne časovnice [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 je Twitter opustil]."
 }

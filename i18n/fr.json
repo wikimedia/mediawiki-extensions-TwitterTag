@@ -5,12 +5,13 @@
 			"Verdy p",
 			"Wladek92",
 			"Thibaut120094",
-			"Gomoko"
+			"Gomoko",
+			"Urhixidur"
 		]
 	},
 	"twitter-tag-desc": "Crée l'étiquette <nowiki><twitter></nowiki>.",
 	"twitter-tag-widget-id": "Erreur : aucun identifiant de widget Twitter n'est fourni. Veuillez consulter le [[mw:Extension:TwitterTag|mode d'emploi]].",
 	"twitter-tag-href": "Erreur: l'URL fournie est non prise en charge ou n'est pas valide. Veuillez consulter le [[mw:Extension:TwitterTag|mode d'emploi]].",
 	"twitter-tag-likes-category": "Pages avec des chronologies de mentions « J’aime » sur Twitter",
-	"twitter-tag-likes-category-desc": "Les pages contenant une intégration des chronologies de mentions « J’aime » sur Twitter. Ces chronologies [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 ont été retirées] par Twitter."
+	"twitter-tag-likes-category-desc": "Les pages contenant une intégration des chronologies de mentions « J’aime » sur X (Twitter). Ces chronologies [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 ont été retirées] par X (Twitter)."
 }
