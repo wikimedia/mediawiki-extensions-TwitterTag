@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alesaru"
+			"Alesaru",
+			"Strainu"
 		]
 	},
-	"twitter-tag-likes-category-desc": "Paginile care conțin cronologie de aprecieri Twitter încorporate. Asemenea cronologie [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 au fost depreciate] de Twitter."
+	"twitter-tag-likes-category-desc": "Paginile care conțin cronologie de aprecieri Twitter încorporate. Asemenea cronologii [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 au fost declarate învechite] de Twitter."
 }
