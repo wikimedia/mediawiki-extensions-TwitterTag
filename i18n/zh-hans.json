@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Lakejason0",
 			"Tr jason",
 			"铁桶"
 		]
 	},
 	"twitter-tag-desc": "创建<nowiki><twitter></nowiki>标签。",
-	"twitter-tag-widget-id": "错误：未提供Twitter Widget的ID。请参见[[mw:Special:MyLanguage/Extension:TwitterTag|使用说明]]。",
-	"twitter-tag-href": "错误：提供的URL不受支持或无效。请参见[[mw:Special:MyLanguage/Extension:TwitterTag|使用说明]]。"
+	"twitter-tag-widget-id": "错误：未提供Twitter Widget的ID。请参见[[mw:Extension:TwitterTag|使用说明]]。",
+	"twitter-tag-href": "错误：提供的URL不受支持或无效。请参见[[mw:Extension:TwitterTag|使用说明]]。"
 }
