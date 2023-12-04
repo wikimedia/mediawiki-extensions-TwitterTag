@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
-	"twitter-tag-desc": "Voegt het <nowiki><twitter></nowiki> element toe."
+	"twitter-tag-desc": "Voegt het <nowiki><twitter></nowiki> element toe.",
+	"twitter-tag-widget-id": "Fout: geen Twitter-widget-ID opgegeven. Zie de [[mw:Extension:TwitterTag|gebruiksaanwijzing]].",
+	"twitter-tag-href": "Fout: niet-ondersteunde of ongeldige URL opgegeven. Zie de [[mw:Extension:TwitterTag|gebruiksaanwijzing]]."
 }
