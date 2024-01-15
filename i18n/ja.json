@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ant176",
 			"Ryoya3"
 		]
 	},
-	"twitter-tag-desc": "<nowiki><twitter></nowiki>タグを作成する。"
+	"twitter-tag-desc": "<nowiki><twitter></nowiki>タグを作成する。",
+	"twitter-tag-likes-category": "Twitterの「いいね」タイムラインを含むページ"
 }
