@@ -6,5 +6,8 @@
 		]
 	},
 	"twitter-tag-desc": "<nowiki><twitter></nowiki>タグを作成する。",
-	"twitter-tag-likes-category": "Twitterの「いいね」タイムラインを含むページ"
+	"twitter-tag-widget-id": "エラー: Twitter ウィジェット ID が指定されていません。[[mw:Extension:TwitterTag|使用方法]]を確認してください。",
+	"twitter-tag-href": "エラー: サポートされていない、または無効な URL が指定されました。[[mw:Extension:TwitterTag|使用方法]]を確認してください。",
+	"twitter-tag-likes-category": "Twitterの「いいね」タイムラインを含むページ",
+	"twitter-tag-likes-category-desc": "Twitter の「いいね」タイムラインが埋め込まれたページ。このようなタイムラインは Twitter によって[https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 廃止されました]。"
 }
