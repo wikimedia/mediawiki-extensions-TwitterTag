@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ryoya3"
+			"Ryoya3",
+			"Ant176"
 		]
 	},
-	"twitter-tag-desc": "<nowiki><twitter></nowiki>タグを作成する。"
+	"twitter-tag-desc": "<nowiki><twitter></nowiki>タグを作成する。",
+	"twitter-tag-widget-id": "エラー: Twitter ウィジェット ID が指定されていません。[[mw:Extension:TwitterTag|使用方法]]を確認してください。",
+	"twitter-tag-href": "エラー: サポートされていない、または無効な URL が指定されました。[[mw:Extension:TwitterTag|使用方法]]を確認してください。"
 }
