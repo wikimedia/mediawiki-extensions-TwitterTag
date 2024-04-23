@@ -3,10 +3,13 @@
 		"authors": [
 			"Tr jason",
 			"Lakejason0",
-			"铁桶"
+			"铁桶",
+			"沈澄心"
 		]
 	},
 	"twitter-tag-desc": "创建<nowiki><twitter></nowiki>标签。",
 	"twitter-tag-widget-id": "错误：未提供Twitter Widget的ID。请参见[[mw:Extension:TwitterTag|使用说明]]。",
-	"twitter-tag-href": "错误：提供的URL不受支持或无效。请参见[[mw:Extension:TwitterTag|使用说明]]。"
+	"twitter-tag-href": "错误：提供的URL不受支持或无效。请参见[[mw:Extension:TwitterTag|使用说明]]。",
+	"twitter-tag-likes-category": "带有Twitter点赞时间线的页面",
+	"twitter-tag-likes-category-desc": "包含嵌入式Twitter点赞时间线的页面。此类时间线 [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 已被Twitter弃用]。"
 }
