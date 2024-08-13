@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ignatgg",
 			"Ата"
 		]
 	},
 	"twitter-tag-desc": "Створює тег <nowiki><twitter></nowiki>.",
 	"twitter-tag-widget-id": "Помилка: Не вказано ідентифікатор віджета Twitter. Будь ласка, перегляньте [[mw:Extension:TwitterTag|інструкції використання]].",
-	"twitter-tag-href": "Помилка: Вказано непідтримуваний чи недійсний URL. Будь ласка, перегляньте [[mw:Extension:TwitterTag|інструкції використання]]."
+	"twitter-tag-href": "Помилка: Вказано непідтримуваний чи недійсний URL. Будь ласка, перегляньте [[mw:Extension:TwitterTag|інструкції використання]].",
+	"twitter-tag-likes-category": "Сторінки з Twitter Подобаються терміни",
+	"twitter-tag-likes-category-desc": "Сторінки, що містять вбудовані твіттер, люблять терміни. Такі терміни [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 були застарілі] у Twitter."
 }
