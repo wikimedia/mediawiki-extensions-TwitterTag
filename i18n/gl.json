@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"twitter-tag-desc": "Crea a etiqueta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Erro: Non se proporcionou o identificador do widget de Twitter. Consulta as [[mw:Extension:TwitterTag|instrucións de uso]].",
+	"twitter-tag-href": "Erro: O enderezo URL proporcionado non é compatible ou non é válido. Consulta as [[mw:Extension:TwitterTag|instrucións de uso]].",
+	"twitter-tag-likes-category": "Páxinas con liñas de tempo de «gústames» de Twitter",
+	"twitter-tag-likes-category-desc": "Páxinas que conteñen liñas de tempo incrustadas de «gústames» de Twitter. Twitter [https://twittercommunity.com/t/removing-support-for-embedded-like-collection-and-moment-timelines/150313 deixou de usar] estas liñas de tempo."
+}
