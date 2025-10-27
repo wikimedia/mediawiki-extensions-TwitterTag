@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"twitter-tag-desc": "Crea a etiqueta <nowiki><twitter></nowiki>.",
+	"twitter-tag-widget-id": "Erro: Non se proporcionou o identificador do widget de Twitter. Consulta as [[mw:Extension:TwitterTag|instrucións de uso]].",
+	"twitter-tag-href": "Erro: O enderezo URL proporcionado non é compatible ou non é válido. Consulta as [[mw:Extension:TwitterTag|instrucións de uso]]."
+}
