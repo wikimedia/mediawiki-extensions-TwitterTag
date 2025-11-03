@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Html\Html;
+
 class TwitterTagController {
 
 	private const PARSER_TAG_NAME = 'twitter';
